@@ -1,0 +1,49 @@
+body {
+    background-image: url(https://concepto.de/wp-content/uploads/2018/10/bosque1-e1539893406729.jpg);  /*se copia el link de la imagen */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;   /*cada 100% representa alto y ancho, obligando a la imagen a adaptarse al monitor/pantalla que lo vea*/
+    color: #fff;
+}
+#bodyModal{
+    background-color: green;
+    color: black;
+}
+#btnCerrar{
+    background-color: brown;
+    color: black;
+}
+#btnCerrar02{
+    background-color: blueviolet;
+    color: black;
+}
+#tituloModal{
+    background-color: aqua;
+    color: black;
+}
+#trajebaño{
+
+    width: 300px;
+    height: 300px;
+}
+#bodyModal{    /* para centrar la imagen se aplica el estilo a la clase padre que almacena la img  */
+    text-align: center;
+}
+
+#HenryFondo{
+    background-image: url(https://www.hogar.mapfre.es/media/2020/01/06-jardines-urbanos.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    background-color: #fff;
+
+}
+
+
+.disponible h6{
+    color: rgb(24, 207, 24);
+}
+
+.PocasUnidades{
+    color: red;
+}
