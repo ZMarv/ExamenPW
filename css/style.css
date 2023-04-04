@@ -1,9 +1,13 @@
-body {
-    background-image: url(https://concepto.de/wp-content/uploads/2018/10/bosque1-e1539893406729.jpg);  /*se copia el link de la imagen */
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;   /*cada 100% representa alto y ancho, obligando a la imagen a adaptarse al monitor/pantalla que lo vea*/
-    color: #fff;
+
+#bodyIndex{
+    background-image: url(Fondos/FondoAnto.jpg);
+}
+ /* #bodyIndex{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(227,174,223,1) 35%); 
+}  */
+#imgCarrusel{    /* para centrar la imagen se aplica el estilo a la clase padre que almacena la img  */
+    text-align: center;
 }
 #bodyModal{
     background-color: green;
@@ -30,20 +34,98 @@ body {
     text-align: center;
 }
 
-#HenryFondo{
-    background-image: url(https://www.hogar.mapfre.es/media/2020/01/06-jardines-urbanos.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-    background-color: #fff;
-
-}
-
-
 .disponible h6{
     color: rgb(24, 207, 24);
 }
 
 .PocasUnidades{
     color: red;
+}
+
+.contenedorFooter{
+    
+    width: 100%;
+    background-color: rgb(64, 5, 173);
+    display: flex; /*  Pongo de forma horizontal  */
+}
+.miniBox{
+
+    width: 33.3%;
+    padding: 30px;
+    text-align: justify;
+    
+}
+.miniBox img{
+    width: 45px;
+    height:25px;
+    padding-right: 15px ;
+}
+.Box img{
+    width: 45px;
+    height:25px;
+    padding-right: 15px ;
+}
+.Box{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Box a{
+    text-decoration: none;
+}
+.Box h3{
+    color: brown;
+}
+.Box h3:hover{
+    color: orangered;
+}
+/* -------------------style fundación -----------------------  */
+body {
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+img{
+        border-radius: 3%;
+    }
+#gatetedonaciones{
+    width: 300px;
+    height: auto;
+}
+
+#DonacionVegetación{
+    width: 300px;
+    height: auto;
+}
+#puerquito{
+    width: 300px;
+    height: auto;
+}
+#Casa01{
+    width: 300px;
+    height: auto;
+}
+/* ----------------- fin fundación -------------------  */
+#BoxContacto{
+    color: rgb(190, 8, 130);
+}
+#TituloHome{
+    padding: 100px;
+    color: aliceblue;
+}
+#DragonIcono{
+    width: 50px;
+    height: auto;
+}
+#DragonesTitle{
+    width: 75px;
+    height: auto;
+    padding: 5px;
+}
+#bodyIndex{
+    font-size: 20px;
+}
+#TitleJardin{
+    font-size: 100px;
 }

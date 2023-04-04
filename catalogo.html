@@ -11,45 +11,41 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: hsla(118, 81%, 55%, 0.582);">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://www.google.com/?hl=es"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Menu
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="catalogo.html">Catálogo</a></li>
-                 <li><a class="dropdown-item" href="Nosotros.html">Nosotros</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="Contactanos.html">Contáctanos</a></li>
-                <li><a class="dropdown-item" href="fundación.html">Fundación Gatitos</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="guapeton.html">Empleado del Año</a></li>
+    <body id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
+      <nav class="navbar navbar-expand-lg" style="background-color: hsla(357, 72%, 43%, 0.342);">
+          <div class="container-fluid">
+            <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContenido" >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html" style="color: antiquewhite;">Jardín Del Dragón</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogo.html" style="color: antiquewhite;">Catalogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="guapeton.html" style="color: antiquewhite;">Jardinero Del Año</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fundación.html" style="color: antiquewhite;">Fundacion </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Nosotros.html" style="color: antiquewhite;">Nosotros </a>
+                </li>
+                <li>
+                  <a class="nav-link avalible" style="color: antiquewhite;">Carrito</a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link avalible">Carrito</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
-            <button class="btn btn-outline-success" type="submit">Buscar...</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
+                <button class="btn btn-outline-success" type="submit">Buscar...</button>
+              </form>
+            </div>
+          </div>
+        </nav>
 
 
     <!-- Lista Productos -->
@@ -250,6 +246,54 @@
             </div>
         </div>      
     </div>
+    <footer>
+      <div class="contenedorFooter" id="BoxContacto">
+        <div class="miniBox" >
+          <h3>Quienes somos</h3>
+          <a href="Nosotros.html">
+            <h3>Nuestra Comunidad</h3>
+    
+        </a>
+      </div>
+      <div class="miniBox">
+          <h3>Redes Sociales</h3> 
+          <div class="Box">
+              <img src="img/LogoInsta.jpg">
+              <a href="https://www.instagram.com/">
+                  <h3>Instagram</h3>
+    
+              </a>
+    
+          </div>
+          <div class="Box">
+              <img src="img/LogoFace.png">
+              <a href="https://es-la.facebook.com/">
+                  <h3>Facebook</h3>
+              </a>
+            </div>
+          </div>
+          <div class="minibox" style="font-family:'Courier New', Courier, monospace">
+              <h3>Contacto </h3>
+              <a href="Contactanos.html">
+                <div class="boxIcon">
+                  <h3><i class="material-icons">home</i>  Avenida Edén 1234</h3> <!--Para que el icono quede en la misma linea encerre todo en el h3 y para que todo quedara como un link lo encerre en el <a>-->
+                </div> 
+                </a>
+              
+    
+              <a href="Contactanos.html">
+                <div class="boxIcon">
+                  <h3><i class="material-icons">email</i> jardin.draconiano@gmail.com</h3>
+                </div> 
+              </a>
+                <a href="Contactanos.html">
+                  <div class="boxIcon">
+                    <h3><i class="material-icons">smartphone</i>  +99 9 9999 9999</h3>
+                  </div> 
+                </a>
+          </div>
+    
+    </footer>
     
     
       

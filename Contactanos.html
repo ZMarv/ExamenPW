@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font/Mifuente.otf" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contactanos</title>
+</head>
+</head>
+<body id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
+    <nav class="navbar navbar-expand-lg" style="background-color: hsla(357, 72%, 43%, 0.342);">
+        <div class="container-fluid">
+          <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContenido" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: antiquewhite;">Jardín Del Dragón</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogo.html" style="color: antiquewhite;">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="guapeton.html" style="color: antiquewhite;">Jardinero Del Año</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fundación.html" style="color: antiquewhite;">Fundacion </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html" style="color: antiquewhite;">Nosotros </a>
+              </li>
+              <li>
+                <a class="nav-link avalible" style="color: antiquewhite;">Carrito</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
+              <button class="btn btn-outline-success" type="submit">Buscar...</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+  <div style="color:black"; class="container mb-5">   <!-- El estilo se le aplica a la clase padre -->
+      <form action="#">
+        <h1 style="color:rgb(0, 0, 0)" >Contactanos</h1>
+      <div class="form-group">
+        <label>Ingrese Nombre </label>
+        <input type="text" class="form-control" placeholder="Ej: Henry Cavill" id="txtNombre" required>
+        <br>
+        <label>Ingrese su fecha de nacimiento :</label>
+        <input type="date" class="form-control" placeholder="01/05/2000" id="txtRut" required>
+        <br>
+        <label>Ingrese su Correo </label>
+        <input type="email" class="form-control" placeholder="Ej:henry.cavill@gmail.com" id="txtCorreo" required>
+        <br>
+        <label>Ingrese su telefono :</label>
+        <input type="text" class="form-control" placeholder="Ej:+999 9999 9999" id="txtRut" required>
+        <br>
+      </div>  
+      <br>
+      <br>
+      <p><h1>Escribanos una opinion o alguna consulta si desea en el recuadro de abajo</h1></p>
+      <p><textarea value="0" rows="10" cols="70" placeholder="Henry Cavill"> ...</textarea></p>
+            <!--"ROWS"= marca define la cantidad de "lineas que puede tener el texto y "COLS" define el numero de columnas que puede tener el texto-->
+            <!--Nota: el codigo funciona pero al momento de "borrar" el texto este no vuelve a aparecer (revisar)-->  
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enviar
+            </button>       
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+           <h1 class="modal-title fs-5" id="tituloModal">  <!-- aqui iria el titulo del modal --> </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="bodyModal">
+          <h3 Style="color:rgb(61, 7, 253)"> Solicitud recibida con exito</h3>
+          <p > Su consulta/comentario fue recibido con exito algún miembro de nuestra comunidad se pondra en contacto con usted a la brevedad muchas plantgracias.</p>
+          <img src="img/HenryTraje.jpg" id="trajebaño" >     
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btnEnviar" class="btn btn-secondary" data-bs-dismiss="modal">Genial</button>
+          <button type="button" id="btnCerrar" class="btn btn-secondary" data-bs-dismiss="modal">Buen jardinero</button>
+            </div>
+            </div>
+          </div>
+  </div>
+</body>
+<footer>
+  <div class="contenedorFooter" id="BoxContacto">
+    <div class="miniBox" >
+      <h3>Quienes somos</h3>
+      <a href="Nosotros.html">
+        <h3>Nuestra Comunidad</h3>
+
+    </a>
+  </div>
+  <div class="miniBox">
+      <h3>Redes Sociales</h3> 
+      <div class="Box">
+          <img src="img/LogoInsta.jpg">
+          <a href="https://www.instagram.com/">
+              <h3>Instagram</h3>
+
+          </a>
+
+      </div>
+      <div class="Box">
+          <img src="img/LogoFace.png">
+          <a href="https://es-la.facebook.com/">
+              <h3>Facebook</h3>
+          </a>
+        </div>
+      </div>
+      <div class="minibox" style="font-family:'Courier New', Courier, monospace">
+          <h3>Contacto </h3>
+          <a href="Contactanos.html">
+            <div class="boxIcon">
+              <h3><i class="material-icons">home</i>  Avenida Edén 1234</h3> <!--Para que el icono quede en la misma linea encerre todo en el h3 y para que todo quedara como un link lo encerre en el <a>-->
+            </div> 
+            </a>
+          
+
+          <a href="Contactanos.html">
+            <div class="boxIcon">
+              <h3><i class="material-icons">email</i> jardin.draconiano@gmail.com</h3>
+            </div> 
+          </a>
+            <a href="Contactanos.html">
+              <div class="boxIcon">
+                <h3><i class="material-icons">smartphone</i>  +99 9 9999 9999</h3>
+              </div> 
+            </a>
+      </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</html>
