@@ -51,8 +51,8 @@
     <!-- Lista Productos -->
       <div class="container mt-5 mb-5">
         <div class="row">
-          <div class="p-3 mb-2 bg-warning text-white border border-2 rounded">
-           <h1>Lista de Productos</h1> 
+          <div class="p-3 mb-2 bg-warning text-white border border-2 rounded" style="text-align: center;">
+           <h1><img id="IconTitleCatalogo" src="img/jazmin.png"> Lista de Productos <img id="IconTitleCatalogo" src="img/jazmin.png" ></h1> 
           </div>
           
           <!-- Grupo 1 -->
@@ -247,54 +247,60 @@
         </div>      
     </div>
     <footer>
-      <div class="contenedorFooter" id="BoxContacto">
-        <div class="miniBox" >
-          <h3>Quienes somos</h3>
+      <div class="contenedorFooter" >
+      <div class="miniBox">
+      <h3 id="TituloContacto">Nuesta Comunidad</h3>  <!-- Id TituloConacto-->
+        <div class="Box">
+          <img src="img/reunion.png">
           <a href="Nosotros.html">
-            <h3>Nuestra Comunidad</h3>
+              <h3 id="ReferenciaContacto">Quienes somos</h3>  <!-- Id ReferenciaContacto-->
     
-        </a>
+          </a>
+        </div>  
       </div>
       <div class="miniBox">
-          <h3>Redes Sociales</h3> 
+          <h3 id="TituloContacto">Redes Sociales</h3> <!-- Id TituloConacto-->
           <div class="Box">
               <img src="img/LogoInsta.jpg">
               <a href="https://www.instagram.com/">
-                  <h3>Instagram</h3>
+                  <h3 id="ReferenciaContacto">Instagram</h3> <!-- Id ReferenciaContacto-->
     
               </a>
-    
           </div>
           <div class="Box">
               <img src="img/LogoFace.png">
               <a href="https://es-la.facebook.com/">
-                  <h3>Facebook</h3>
+                  <h3 id="ReferenciaContacto">Facebook</h3>  <!-- Id ReferenciaContacto-->
               </a>
             </div>
           </div>
-          <div class="minibox" style="font-family:'Courier New', Courier, monospace">
-              <h3>Contacto </h3>
+          <div class="minibox" id="miniboxContacto" >
+              <h3 id="TituloContacto">Contacto </h3>   <!-- Id TituloConacto-->
+          <div class="Box">
               <a href="Contactanos.html">
-                <div class="boxIcon">
-                  <h3><i class="material-icons">home</i>  Avenida Edén 1234</h3> <!--Para que el icono quede en la misma linea encerre todo en el h3 y para que todo quedara como un link lo encerre en el <a>-->
+                <div class="boxIcon"> <!-- Id ReferenciaContacto-->
+                  <h3 id="ReferenciaContacto"><img src="img/mapa.png">  Avenida Edén 1234</h3> <!--Para que el icono quede en la misma linea encerre todo en el h3 y para que todo quedara como un link lo encerre en el <a>-->  <!-- Id ReferenciaContacto-->
                 </div> 
                 </a>
-              
-    
+          </div>
+          <div class="Box">
               <a href="Contactanos.html">
                 <div class="boxIcon">
-                  <h3><i class="material-icons">email</i> jardin.draconiano@gmail.com</h3>
+                  <h3 id="ReferenciaContacto"><img src="img/enviar-correo.png"> jardin.draconiano@gmail.com</h3>  <!-- Id ReferenciaContacto-->
                 </div> 
               </a>
+            </div>
+            <div class="Box">
                 <a href="Contactanos.html">
                   <div class="boxIcon">
-                    <h3><i class="material-icons">smartphone</i>  +99 9 9999 9999</h3>
+                    <h3 id="ReferenciaContacto"><img src="img/telefono-fijo.png">  +99 9 9999 9999</h3> <!-- Id ReferenciaContacto-->
                   </div> 
                 </a>
+              </div>
+            
           </div>
     
     </footer>
-    
     
       
       

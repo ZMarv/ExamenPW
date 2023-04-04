@@ -56,13 +56,13 @@
     
 }
 .miniBox img{
-    width: 45px;
-    height:25px;
+    width: 40px;
+    height:30px;
     padding-right: 15px ;
 }
 .Box img{
-    width: 45px;
-    height:25px;
+    width: 44px;
+    height:30px;
     padding-right: 15px ;
 }
 .Box{
@@ -73,22 +73,16 @@
 .Box a{
     text-decoration: none;
 }
-.Box h3{
-    color: brown;
+#TituloContacto{
+    color: rgb(208, 211, 30);
 }
-.Box h3:hover{
-    color: orangered;
+#ReferenciaContacto{
+    color: aqua;
+}
+#ReferenciaContacto:hover{
+    color: red;
 }
 /* -------------------style fundación -----------------------  */
-body {
-    margin: 0;
-    padding: 0;
-    
-    }
-    
-img{
-        border-radius: 3%;
-    }
 #gatetedonaciones{
     width: 300px;
     height: auto;
@@ -126,6 +120,20 @@ img{
 #bodyIndex{
     font-size: 20px;
 }
-#TitleJardin{
+#TitleJardin{    /*  ajusto el tamaño de la fuente  */
     font-size: 100px;
+}
+#slide01 img{
+    width: 700px;
+    height: auto;
+}
+#IconoGuapetonIcono{
+width: 75px;
+height: auto;
+padding: 5px;
+}
+#IconTitleCatalogo{
+    width: 75px;
+    height: auto;
+    padding: 5px;
 }

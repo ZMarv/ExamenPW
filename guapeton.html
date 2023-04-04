@@ -1,170 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <me
+    ta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>guapeton</title>
-    
+    <title>Inicio</title>
 </head>
-  <body id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
-    <nav class="navbar navbar-expand-lg" style="background-color: hsla(357, 72%, 43%, 0.342);">
-        <div class="container-fluid">
-          <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContenido" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" style="color: antiquewhite;">Jardín Del Dragón</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="catalogo.html" style="color: antiquewhite;">Catalogo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="guapeton.html" style="color: antiquewhite;">Jardinero Del Año</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="fundación.html" style="color: antiquewhite;">Fundacion </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Nosotros.html" style="color: antiquewhite;">Nosotros </a>
-              </li>
-              <li>
-                <a class="nav-link avalible" style="color: antiquewhite;">Carrito</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
-              <button class="btn btn-outline-success" type="submit">Buscar...</button>
-            </form>
-          </div>
+<body id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
+  <nav class="navbar navbar-expand-lg" style="background-color: hsla(357, 72%, 43%, 0.342);">
+    <div class="container-fluid">
+      <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: antiquewhite;">Jardín Del Dragón</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html" style="color: antiquewhite;">Catalogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guapeton.html" style="color: antiquewhite;">Jardinero Del Año</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fundación.html" style="color: antiquewhite;">Fundacion </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html" style="color: antiquewhite;">Nosotros </a>
+          </li>
+          <li>
+            <a class="nav-link avalible" style="color: antiquewhite;">Carrito</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
+          <button class="btn btn-outline-success" type="submit">Buscar...</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div>
+          <h1 style="color: black; text-align: center"><img id="IconoGuapetonIcono" src="img/emoticonos.png"> Jardinero del Año <img id="IconoGuapetonIcono" src="img/emoticonos.png"></h1>
+          <h2><p style="color:rgb(22, 41, 10); text-align: center;">HENRY CAVILL</p></h2>
         </div>
-      </nav>
-    <h1 style="color: black; text-align: center"> Jardinero del Año </h1>
-    <h2><p style="color:blue; text-align: center;">HENRY CAVILL</p></h2>
-    <div class="container" id="guapeton"></div>
-    <div class="container mb-5 mt-5">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/Henry01.jpg" class="d-block w-100" alt="...">
+        <div id="SlideIndex" class="carousel slide mb-5 mt-5" data-bs-ride="carousel" style="text-align: center;">  <!-- aplique el espacio en la clase (mb-5 mt-5)y aparte puse toda la clase centrada con el style-->
+          <div id="slide01" class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000"> <!--el data-bs-interval="xxxxx"> es el intervalo de tiempo que se vera cada imagen antes de cambiarse, para cambiarlo es el cambio seria 1000= 1segundo, 2000=2segundos y asi sucesivamente con 10000 esta configurado en 10 segundos-->
+              <img src="img/Henry02.jpg" class="img-fluid rounded-4" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="img/Henry02.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="img/Henry01.jpg" class="img-fluid rounded-4" alt="...">   <!-- Modifique una imagen directamente en la linea de codigo para no afectar a las demas dandole un width de 1000px-->
             </div>
-            <div class="carousel-item">
-              <img src="img/Henry06.jpg" id="Henry06" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="img/Henry04.jpg" class="img-fluid rounded-4" alt="...">
+            </div> 
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="img/Henry06.jpg" class="img-fluid rounded-4" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="img/Henry04.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/Henry05.jpg" class="d-block w-100" alt="...">
-              </div>
+        
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#SlideIndex" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#SlideIndex" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+      </div>  
+      <div class="container">
+        <h3><p> Este ejemplo de hombre trabaja sin fines de lucro y aparte se encarga de todas nuestras plantitas, las cuales cuida con bastante amor, que pareciera que no quieren irse cuando se las llevan sus nuevos dueños. 
+            El joven (hombre perfecto) llamado Henry papito Cavill es de orígenes británicos, lo cual le da un exquisito tono exótico de ricura. 
+        </p></h3>
+        <div class="audio" id="Musica">
+          <audio src="audio/y2mate.com - Striptease Music Dance mix.mp3" controls> </audio>
+          <p style="color: blue;">Para una mejor experiencia, presione el botón de play</p>
         </div>
 
-        <div class="container">
-            <h3><p> Este ejemplo de hombre trabaja sin fines de lucro y aparte se encarga de todas nuestras plantitas, las cuales cuida con bastante amor, que pareciera que no quieren irse cuando se las llevan sus nuevos dueños. 
-                El joven (hombre perfecto) llamado Henry papito Cavill es de orígenes británicos, lo cual le da un exquisito tono exótico de ricura. 
-            </p></h3>
-
+    </div>
+<div class="container mb-5">
+      <form action="#">
+        <h1 style="color:rgb(255, 0, 0)" > <!--Titulo del modal --></h1>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Donar al Jardinero
+      </button>
+    </form>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+           <h1 class="modal-title fs-5" id="tituloModal">  <!-- aqui iria el titulo del modal --> </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    <div class="container mb-5">
-          <form action="#">
-            <h1 style="color:rgb(255, 0, 0)" > <!--Titulo del modal --></h1>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Donar al Jardinero
-          </button>
-        </form>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-               <h1 class="modal-title fs-5" id="tituloModal">  <!-- aqui iria el titulo del modal --> </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body" id="bodyModal">
+          <h3 Style="color:rgb(61, 7, 253)"> Gracias por su donación</h3>
+          <p > Su Donación fue recibida con exito.</p>
+          <img src="img/Henry07.jpg" id="trajebaño" >     
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btnCerrar" class="btn btn-secondary" data-bs-dismiss="modal">Gracias a usted</button>
+          <button type="button" id="btnCerrar02" class="btn btn-secondary" data-bs-dismiss="modal">Gracias a Henry Cavill</button>
             </div>
-            <div class="modal-body" id="bodyModal">
-              <h3 Style="color:rgb(61, 7, 253)"> Gracias por su donación</h3>
-              <p > Su Donación fue recibida con exito.</p>
-              <img src="img/Henry07.jpg" id="trajebaño" >     
             </div>
-            <div class="modal-footer">
-              <button type="button" id="btnCerrar" class="btn btn-secondary" data-bs-dismiss="modal">Gracias a usted</button>
-              <button type="button" id="btnCerrar02" class="btn btn-secondary" data-bs-dismiss="modal">Gracias a Henry Cavill</button>
-                </div>
-                </div>
-              </div>
-    </div>
-        
-        <audio src="audio/y2mate.com - Striptease Music Dance mix.mp3" controls> </audio>
-        <p style="color: blue;">Para una mejor experiencia, presione el botón de play</p>
+          </div>  
+</div>
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
-<footer>
-  <div class="contenedorFooter" id="BoxContacto">
-    <div class="miniBox" >
-      <h3>Quienes somos</h3>
-      <a href="Nosotros.html">
-        <h3>Nuestra Comunidad</h3>
 
-    </a>
+<footer>
+  <div class="contenedorFooter" >
+  <div class="miniBox">
+  <h3 id="TituloContacto">Nuesta Comunidad</h3>  <!-- Id TituloConacto-->
+    <div class="Box">
+      <img src="img/reunion.png">
+      <a href="Nosotros.html">
+          <h3 id="ReferenciaContacto">Quienes somos</h3>  <!-- Id ReferenciaContacto-->
+
+      </a>
+    </div>  
   </div>
   <div class="miniBox">
-      <h3>Redes Sociales</h3> 
+      <h3 id="TituloContacto">Redes Sociales</h3> <!-- Id TituloConacto-->
       <div class="Box">
           <img src="img/LogoInsta.jpg">
           <a href="https://www.instagram.com/">
-              <h3>Instagram</h3>
+              <h3 id="ReferenciaContacto">Instagram</h3> <!-- Id ReferenciaContacto-->
 
           </a>
-
       </div>
       <div class="Box">
           <img src="img/LogoFace.png">
           <a href="https://es-la.facebook.com/">
-              <h3>Facebook</h3>
+              <h3 id="ReferenciaContacto">Facebook</h3>  <!-- Id ReferenciaContacto-->
           </a>
         </div>
       </div>
-      <div class="minibox" style="font-family:'Courier New', Courier, monospace">
-          <h3>Contacto </h3>
+      <div class="minibox" id="miniboxContacto" >
+          <h3 id="TituloContacto">Contacto </h3>   <!-- Id TituloConacto-->
+      <div class="Box">
           <a href="Contactanos.html">
-            <div class="boxIcon">
-              <h3><i class="material-icons">home</i>  Avenida Edén 1234</h3> <!--Para que el icono quede en la misma linea encerre todo en el h3 y para que todo quedara como un link lo encerre en el <a>-->
+            <div class="boxIcon"> <!-- Id ReferenciaContacto-->
+              <h3 id="ReferenciaContacto"><img src="img/mapa.png">  Avenida Edén 1234</h3> <!--Para que el icono quede en la misma linea encerre todo en el h3 y para que todo quedara como un link lo encerre en el <a>-->  <!-- Id ReferenciaContacto-->
             </div> 
             </a>
-          
-
+      </div>
+      <div class="Box">
           <a href="Contactanos.html">
             <div class="boxIcon">
-              <h3><i class="material-icons">email</i> jardin.draconiano@gmail.com</h3>
+              <h3 id="ReferenciaContacto"><img src="img/enviar-correo.png"> jardin.draconiano@gmail.com</h3>  <!-- Id ReferenciaContacto-->
             </div> 
           </a>
+        </div>
+        <div class="Box">
             <a href="Contactanos.html">
               <div class="boxIcon">
-                <h3><i class="material-icons">smartphone</i>  +99 9 9999 9999</h3>
+                <h3 id="ReferenciaContacto"><img src="img/telefono-fijo.png">  +99 9 9999 9999</h3> <!-- Id ReferenciaContacto-->
               </div> 
             </a>
+          </div>
+        
       </div>
 
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </html>
