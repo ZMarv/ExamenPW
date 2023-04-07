@@ -152,3 +152,20 @@ padding: 5px;
 #pagar{
     text-align: center;
 }
+
+/* Inicio sesion  */
+#bg{
+    background-image: url(Fondos/f1.png);
+    background-position: center center;
+}
+
+/* #bbg{
+    background: #ff57ca;
+    background:linear-gradient(to right, #9838cf, #ff57ca);
+} */
+
+#bbg{
+    background-image: url(Fondos/FondoAnto.jpg);
+    background-position: center center;
+}
+
