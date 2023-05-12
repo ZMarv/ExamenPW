@@ -177,3 +177,20 @@ padding: 5px;
 #stFundacion{
     color: black;
 }
+
+.modal-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-carrito{
+    width: 200px;
+    padding: 20px;
+}
+
+#cVacio{
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(199, 64, 138);
+}

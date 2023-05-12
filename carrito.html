@@ -46,9 +46,74 @@
         </div>
       </nav>
 
-      <div class="container">
+      <main>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <form id="procesar-pago" method="POST">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingresa nombre cliente" name="persona">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                            <div class="col-12 col-md-10">
+                            <input type="text"  id="correo" class="form-control"  name="email.id" id="email.id">
+                            </div>
+                        </div>
+
+                        <div id="carrito" class="form-group table-responsive">
+                            <table class="table" id="listaCompra">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL
+                                        <p id="totalProceso"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="row justify-content-center d-none" id="spinner">
+                            <div class="spinner">
+                                <div class="dot1"></div>
+                                <div class="dot2"></div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                 <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar compra" >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+      <!-- <div class="container">
         <div class="row">
-          <div class="containerTitle  pb-5 " id="TituloHome">
+          <div class="containerTitle pb-5 " id="TituloHome">
             <h1 id="TitleJardin"><p style="color:rgb(141, 185, 141); text-align: center"> <img src="img/continuar.png" id="DragonesTitle"></img>Carrito del Dragón<img class="navbar-brand" src="img/DragonVerde.png" id="DragonesTitle"></img></p></h1>  
           </div>
         <div class="row">
@@ -237,12 +302,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
-    <!-- <audio src="aqui va la ruta a la carpeta audio" autoplay="autoplay"></audio> -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="js/storageCatalogo.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
 <footer style="background-color:  rgb(64, 5, 173); padding: 20px;">
   <div class="container" id="ImgLogos">
