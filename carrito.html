@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/spinner.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/spinner.css">
     <title>Carrito</title>
 </head>
 
-<body id="bodyIdex" style="font-family:  'Times New Roman', Times, serif;">
-    <nav class="navbar navbar-expand-lg" style="background-color: hsla(357, 72%, 43%, 0.342);">
+<body class="dark" id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
+    <nav  id="navBar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarContenido" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <div class="collapse navbar-collapse" id="navbarContenido">
+            <ul id="NavCompleto" class="navbar-nav me-auto mb-2 mb-lg-0 " >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" style="color: antiquewhite;">Jardín Del Dragón</a>
+                <a id="NavDatos" class="nav-link " href="index.html ">Jardín Del Dragón</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="catalogo.html" style="color: antiquewhite;">Catálogo</a>
+                <a id="NavDatos" class="nav-link" href="catalogo.html " >Catálogo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="guapeton.html" style="color: antiquewhite;">Jardinero Del Año</a>
+                <a id="NavDatos" class="nav-link" href="guapeton.html" >Jardinero Del Año</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="fundación.html" style="color: antiquewhite;">Fundación </a>
+                <a id="NavDatos" class="nav-link" href="fundación.html" >Fundación </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Nosotros.html" style="color: antiquewhite;">Nosotros </a>
+                <a id="NavDatos" class="nav-link" href="Nosotros.html" >Nosotros </a>
               </li>
-              <li>
-                <a class="nav-link" href="carrito.html" style="color: antiquewhite;">Carrito</a>
+              <li class="nav-item">
+                <a id="NavDatos" class="nav-link" href="clima.html" > Clima </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
@@ -47,10 +48,20 @@
                 </svg><i id="contenedorCarrito">0</i>
                 </a>
               </li>
+
+              <!-- boton modo oscuro-->
+              
+              <h5 id="NavDatos" style="padding-top: 9px; padding-left: 100px;"> Modo oscuro</h5>
+              <div class="row" style="padding-left: 15px;">
+               <a id="darkmode" href="javascript:void(0)"> </a>
+               
+              </div>
+              <!-- FIn boton modo oscuro-->
+              
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
-              <button class="btn btn-outline-success" type="submit">Buscar...</button>
+              <button id="Buscador" class="btn btn-outline-success" type="submit">Buscar...</button>
             </form>
           </div>
         </div>
@@ -62,7 +73,7 @@
         <div class="container">
             <div class="row mt-3">
                 <div class="col">
-                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <h2 id="TituloCompra" class="d-flex justify-content-center mb-3">Realizar Compra</h2>
                     <form id="procesarPago" method="POST">
                         <div class="form-group row">
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Nombre Cliente:</label>
@@ -113,12 +124,10 @@
                           </div>
                         
 
-                        <div class="row justify-content-between">
-                            <div class="col-md-4 mb-5">
-                                <a href="catalogo.html" class="btn btn-info btn-block">Seguir comprando</a>
-                            </div>
-                            <div class="col-xs-12 col-md-4">
-                                 <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar compra">
+                        <div id="botones" class="row justify-content-between">
+                            <div class="col-md-4">
+                                <button href="catalogo.html" id="botonComprando" class="btn btn-info btn-block">Seguir comprando</button>
+                                 <input type="submit" class="btn btn-success btn-block" id="BotonFinalizando" value="Finalizar compra">
                                  <a id="button" href="index.html"></a>
                             </div>
                         </div>
@@ -128,44 +137,54 @@
         </div>
     </main>    
     
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-    <script src="js/storageCatalogo.js"></script>
+</body>
+    
+<!--Llaves script-->
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="js/storageCatalogo.js"></script>
+<script src="js/darkmode.js"></script>
+<!--Fin llaves scrip-->
 </body>
 
-<footer style="background-color:  rgb(64, 5, 173); padding: 20px;">
+<footer id="Footer">
   <div class="container" id="ImgLogos">
     <div class="row">
       <div class="Container col-md-4">  <!--Caja 1-->
+        
         <h4>Nuestra Comunidad</h4>
         <ul class="list-unstyled" id="Referencias">
           <img src="img/reunion.png">
-          <li><a href="Nosotros.html"> ¿Quiénes Somos?</a></li>
+          <a href="Nosotros.html"><b>¿Quiénes Somos?</b></a>
         </ul>
       </div>
       <div class="Container col-md-4" > <!--Caja 2-->
         <h4>Redes sociales</h4>
         <ul class="list-unstyled" id="Referencias">
           <img src="img/LogoInsta.jpg">
-          <li><a href="https://www.instagram.com/"> Instagram</a></li>
+          <a href="https://www.instagram.com/"><b> Instagram </b></a>
+          <br>
           <img src="img/LogoFace.png">
-          <li><a href="https://es-la.facebook.com/"></i> Facebook</a></li>
+          <a href="https://es-la.facebook.com/"><b> Facebook </b></a>
         </ul>
       </div>
       <div class="Container col-md-4" > <!--Caja 3-->
         <h4>Contacto</h4>
         <ul class="list-unstyled" id="Referencias" >
           <img src="img/mapa.png">
-          <li><a href="https://www.google.cl/maps/"> Avenida Vicuña mackenna 6436</a></li>
+          <a href="https://www.google.cl/maps/place/Jard%C3%ADn+Del+Drag%C3%B3n/@37.8417249,-1.4281737,18.46z/data=!4m6!3m5!1s0xd648e61ee56175b:0x70fc5a4678d66e95!8m2!3d37.8417518!4d-1.428221!16s%2Fg%2F11hbkkv0y8"><b> Jardin Del Drágon</b></a>
+          <br>
           <img src="img/enviar-correo.png">
-          <li><a href="Contactanos.html"></i> jardin.draconiano@gmail.com</a></li>
+          <a href="Contactanos.html"><b> jardin.draconiano@gmail.com </b></a>
+          <br>
           <img src="img/telefono-fijo.png">
-          <li><a href="Contactanos.html"></i> +99 9 9999 9999</a></li>
+          <a href="Contactanos.html"><b> +99 9 9999 9999 </b></a>
         </ul>
       </div>
       
     </div>
+  
   </div>
 </footer>
 </html>

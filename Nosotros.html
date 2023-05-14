@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
     <title> Nosotros</title>
 </head>                                      
-  <body id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
-    <nav class="navbar navbar-expand-lg" style="background-color: hsla(357, 72%, 43%, 0.342);">
-        <div class="container-fluid">
-          <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContenido" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" style="color: antiquewhite;">Jardín Del Dragón</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="catalogo.html" style="color: antiquewhite;">Catálogo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="guapeton.html" style="color: antiquewhite;">Jardinero Del Año</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="fundación.html" style="color: antiquewhite;">Fundación </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Nosotros.html" style="color: antiquewhite;">Nosotros </a>
-              </li>
-              <li>
-                <a class="nav-link" href="carrito.html" style="color: antiquewhite;">Carrito</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
-              <button class="btn btn-outline-success" type="submit">Buscar...</button>
-            </form>
+<body class="dark" id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
+  <nav  id="navBar" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul id="NavCompleto" class="navbar-nav me-auto mb-2 mb-lg-0 " >
+          <li class="nav-item">
+            <a id="NavDatos" class="nav-link " href="index.html ">Jardín Del Dragón</a>
+          </li>
+          <li class="nav-item">
+            <a id="NavDatos" class="nav-link" href="catalogo.html " >Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a id="NavDatos" class="nav-link" href="guapeton.html" >Jardinero Del Año</a>
+          </li>
+          <li class="nav-item">
+            <a id="NavDatos" class="nav-link" href="fundación.html" >Fundación </a>
+          </li>
+          <li class="nav-item">
+            <a id="NavDatos" class="nav-link" href="Nosotros.html" >Nosotros </a>
+          </li>
+          <li class="nav-item">
+            <a id="NavDatos" class="nav-link" href="clima.html" > Clima </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            
+            </svg><i id="contenedorCarrito">0</i>
+            </a>
+          </li>
+
+          <!-- boton modo oscuro-->
+          
+          <h5 id="NavDatos" style="padding-top: 9px; padding-left: 100px;"> Modo oscuro</h5>
+          <div class="row" style="padding-left: 15px;">
+           <a id="darkmode" href="javascript:void(0)"> </a>
+           
           </div>
-        </div>
-      </nav>
+          <!-- FIn boton modo oscuro-->
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Ej. Robles..." aria-label="Search">  <!-- el placeholder es el ejemplo  -->
+          <button id="Buscador" class="btn btn-outline-success" type="submit">Buscar...</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <button id="activarFuncion" class="btn btn-secondary boton mt-2">Click</button>
+  
     <h1 style="color:rgb(219, 185, 185); text-align: center;">Nuestra comunidad</h1>
-    <h3 style="text-align: center; color: antiquewhite;"><p>Somos una junta de 3 vecinos que nos unimos con un propósito. Nos propusimos vender artículos de jardinería sin fines de lucro, en nuestro día a día participamos de actividades que mejoren el medio ambiente, ya que creemos que podemos mejorar nuestro planeta, ayudando a una fundación de medio ambiente. El dinero que se recaude de estas ventas será para las personas afectadas por los incendios que ocurrieron al sur de Chile, tanto para reconstrucción de viviendas o vegetación. 
-    <h3 style="text-align: center; color: antiquewhite;"><p>Si quieres ser parte de nuestra comunidad puedes contactarnos. No tenemos límite de edad, sólo pedimos entuciasmo.</p></h3>
+    <h3 style="text-align: center; color: rgb(163, 30, 180);"><p>Somos una junta de 3 vecinos que nos unimos con un propósito. Nos propusimos vender artículos de jardinería sin fines de lucro, en nuestro día a día participamos de actividades que mejoren el medio ambiente, ya que creemos que podemos mejorar nuestro planeta, ayudando a una fundación de medio ambiente. El dinero que se recaude de estas ventas será para las personas afectadas por los incendios que ocurrieron al sur de Chile, tanto para reconstrucción de viviendas o vegetación. 
+    <h3 style="text-align: center; color: rgb(180, 30, 180);"><p>Si quieres ser parte de nuestra comunidad puedes contactarnos. No tenemos límite de edad, sólo pedimos entuciasmo.</p></h3>
     </p></h3>
     <div class="container mb-5 mt-5">
       <div id="carouselExampleCaptions" class="carousel slide">
@@ -93,43 +115,52 @@
       </div>
     </div>
 </div>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
-  <footer style="background-color:  rgb(64, 5, 173); padding: 20px;">
-    <div class="container" id="ImgLogos">
-      <div class="row">
-        <div class="Container col-md-4">  <!--Caja 1-->
-          <h4>Nuestra Comunidad</h4>
-          <ul class="list-unstyled" id="Referencias">
-            <img src="img/reunion.png">
-            <li><a href="Nosotros.html"> ¿Quiénes Somos?</a></li>
-          </ul>
-        </div>
-        <div class="Container col-md-4" > <!--Caja 2-->
-          <h4>Redes sociales</h4>
-          <ul class="list-unstyled" id="Referencias">
-            <img src="img/LogoInsta.jpg">
-            <li><a href="https://www.instagram.com/"> Instagram</a></li>
-            <img src="img/LogoFace.png">
-            <li><a href="https://es-la.facebook.com/"></i> Facebook</a></li>
-          </ul>
-        </div>
-        <div class="Container col-md-4" > <!--Caja 3-->
-          <h4>Contacto</h4>
-          <ul class="list-unstyled" id="Referencias" >
-            <img src="img/mapa.png">
-            <li><a href="https://www.google.cl/maps/"> Avenida Vicuña mackenna 6436</a></li>
-            <img src="img/enviar-correo.png">
-            <li><a href="Contactanos.html"></i> jardin.draconiano@gmail.com</a></li>
-            <img src="img/telefono-fijo.png">
-            <li><a href="Contactanos.html"></i> +99 9 9999 9999</a></li>
-          </ul>
-        </div>
+<!--Llaves script-->
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="js/darkmode.js"></script>
+<!--Fin llaves scrip-->
+</body>
+<!--Llaves script-->
+<footer id="Footer">
+  <div class="container" id="ImgLogos">
+    <div class="row">
+      <div class="Container col-md-4">  <!--Caja 1-->
         
+        <h4>Nuestra Comunidad</h4>
+        <ul class="list-unstyled" id="Referencias">
+          <img src="img/reunion.png">
+          <a href="Nosotros.html"><b>¿Quiénes Somos?</b></a>
+        </ul>
       </div>
+      <div class="Container col-md-4" > <!--Caja 2-->
+        <h4>Redes sociales</h4>
+        <ul class="list-unstyled" id="Referencias">
+          <img src="img/LogoInsta.jpg">
+          <a href="https://www.instagram.com/"><b> Instagram </b></a>
+          <br>
+          <img src="img/LogoFace.png">
+          <a href="https://es-la.facebook.com/"><b> Facebook </b></a>
+        </ul>
+      </div>
+      <div class="Container col-md-4" > <!--Caja 3-->
+        <h4>Contacto</h4>
+        <ul class="list-unstyled" id="Referencias" >
+          <img src="img/mapa.png">
+          <a href="https://www.google.cl/maps/place/Jard%C3%ADn+Del+Drag%C3%B3n/@37.8417249,-1.4281737,18.46z/data=!4m6!3m5!1s0xd648e61ee56175b:0x70fc5a4678d66e95!8m2!3d37.8417518!4d-1.428221!16s%2Fg%2F11hbkkv0y8"><b> Jardin Del Drágon</b></a>
+          <br>
+          <img src="img/enviar-correo.png">
+          <a href="Contactanos.html"><b> jardin.draconiano@gmail.com </b></a>
+          <br>
+          <img src="img/telefono-fijo.png">
+          <a href="Contactanos.html"><b> +99 9 9999 9999 </b></a>
+        </ul>
+      </div>
+      
     </div>
-  </footer>
+  
+  </div>
+</footer>
     
 </html>
