@@ -295,7 +295,7 @@ function finalizarCompra(e){
                 
                 location.href = "index.html"
                                 
-            }, 4000);
+            }, 2000);
 
         },4000);
        
