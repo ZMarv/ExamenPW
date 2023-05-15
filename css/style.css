@@ -1,82 +1,296 @@
+/*================FUENTES================*/
+/*=======================================*/
+@font-face {
+    font-family: "Elfico";
+    src: url(font/hobbitonbrushhand.ttf);
+}
+@font-face {
+    font-family: "Dragones";
+    src: url(font/Dragons\ Tfb.ttf);
+}
+@font-face {
+    font-family: TomRaider;
+    src: url(font/Tomb_Raider.ttf);
+}
+/*===============FIN FUENTES=============*/
+/*=======================================*/
 
-#bodyIndex{
-    background-image: url(Fondos/FondoAnto.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    color: #fff;
+
+
+/*===============INICIO GUAPERAS=============*/
+/*=======================================*/
+#SlideGuapeton img{
+    width: 50%;
+    height: auto;
+    text-align: justify;
 }
- /* #bodyIndex{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(227,174,223,1) 35%); 
-}  */
-#imgCarrusel{    /* para centrar la imagen se aplica el estilo a la clase padre que almacena la img  */
-    text-align: center;
-}
-#bodyModal{
-    background-color: green;
-    color: black;
-}
-#btnCerrar{
-    background-color: brown;
-    color: black;
-}
-#btnCerrar02{
-    background-color: blueviolet;
-    color: black;
-}
-#tituloModal{
-    background-color: aqua;
-    color: black;
+#IconoGuapetonIcono{
+    width: 75px;
+    height: auto;
+    padding: 5px;
 }
 #trajebaño{
 
     width: 300px;
     height: 300px;
 }
-#bodyModal{    /* para centrar la imagen se aplica el estilo a la clase padre que almacena la img  */
+#HenryDescripcion h3{
+    color: rgb(255, 255, 255);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #020202;
+}
+
+
+body.dark #HenryDescripcion h3{
+    color: rgb(93, 9, 141);
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-shadow: 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff;  /* Fondo paras las letras trucho */
+    font-size: 40px;
+
+}
+#audioHenry{
+    color: rgb(93, 9, 141);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff;  /* Fondo paras las letras trucho */
+}
+#TituloJardinero{
+    font-size: 70px;
+    color: rgb(116, 20, 160);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #020202;
     text-align: center;
+}
+#NombreJardinero{
+    font-size: 50px;
+    color: rgb(168, 21, 65);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #020202;
+    text-align: center;
+}
+/*============FIN DEL GUAPERAS===========*/
+/*=======================================*/
+
+
+
+
+/*===========ICONO PRINCIPAL=============*/
+/*=======================================*/
+#DragonIcono{
+    width: 50px;
+    height: auto;
+}
+/*=========FIN ICONO PRINCIPAL===========*/
+/*=======================================*/
+
+
+
+#miniFormulario{
+    background-color: #ffffff;
+}
+
+/*=============TEMA NORMAL===============*/
+/*=======================================*/
+
+#TituloHome h1{
+    font-family: Elfico;
+    color: rgb(87, 133, 66);
+    text-align: center;
+    font-size: 100px;
+    padding: 20px;
+   
+}
+#TituloHome{
+    padding: 100px;
+}
+#DragonesTitle{
+    width: 75px;
+    height: auto;
+    padding: 5px;
+}
+#NavCompleto a{
+    font-size: 20px;
+}
+body{   
+   /* background: rgb(44,27,71);
+    background: linear-gradient(45deg, rgba(44,27,71,1) 2%, rgba(114,76,157,1) 35%, rgba(220,202,233,1) 59%, rgba(147,86,160,1) 77%, rgba(198,211,250,1) 100%); */
+    background-image: url(Fondos/Bosque02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1f auto;
+
+}
+body #NavDatos {   /*  color fuente de las etiquetas "a" */
+    color: rgb(134, 76, 9);
+}
+body #navBar{
+    background-color: rgba(58, 13, 218, 0.663);
+}
+body #DescripciónIndex{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    font-size: 35px;
+}
+/*============FIN TEMA NORMAL============*/
+/*=======================================*/
+
+
+
+
+/*==============TEMA OSCURO==============*/
+/*=======================================*/
+body.dark #DescripciónIndex{
+    text-align: justify;
+    font-size: 35px;
+    color: rgb(93, 20, 136);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+
     
 }
-
-.disponible h6{
-    color: rgb(24, 207, 24);
+body.dark #TitleJardin{
+    font-size: 100px;
+    color: rgb(93, 9, 141);
+    font-family: Elfico;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-align: center;
+    padding: 20px;
+}
+body.dark{   /*cambiar paleta de colores */
+    /*background: rgb(170,133,176);
+    background: linear-gradient(301deg, rgba(170,133,176,1) 14%, rgba(159,159,180,1) 21%, rgba(153,177,193,1) 37%, rgba(188,218,190,1) 44%, rgba(159,184,138,1) 66%, rgba(181,161,135,1) 74%, rgba(198,165,98,1) 95%); /*background-image: url(Fondos/f1.png);*/
+    background-image: url(Fondos/Dragon\ y\ Bosque.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
-.PocasUnidades{
-    color: red;
+body.dark #NavDatos{ /*  color fuente de las etiquetas "a" en variacolor*/
+    color: rgb(39, 83, 100);
 }
-/*  footer  */
+body.dark #darkmode{
+    background-position: right center;
+}
+body.dark #navBar{
+    background-color: rgb(158, 101, 26);
+}
+body.dark #Buscador{
+    background-color: rgb(104, 9, 9);
+}
+#darkmode{
+    display: inline-block;
+    background: url(Fondos/dark-mode.png) left center;
+    width: 100px;
+    height: 40px;
+    font-size: 0;
+    text-decoration: none;
+}
+/*============FIN TEMA OSCURO============*/
+/*=======================================*/
+
+
+/*============SLIDE INICIO===============*/
+/*=======================================*/
+#CardSlide{
+    width: 100%;
+    height: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+/*============SLIDE INICIO===============*/
+/*=======================================*/
+
+
+
+/*===========================FOOTER============================*/
+/*=============================================================*/
 #ImgLogos img{     
     width: 40px;
-    height: 30px;
+    height: 25px;
     padding-right: 15px;
 }
 #ImgLogos a{
     text-decoration: none;
+    font-size: 20px;
 }
 #ImgLogos{
     color: rgb(200, 214, 0);
 }
-#ImgLogos li :hover{   /* llamo al id padre que almacena todo y luego li para señalar que clases quiero cambiar, y termino especificando el hover para que se les aplique a todos los links */
+#Footer b{
+    color: rgb(0, 0, 0) ;
+}
+#Footer{
+    background-color: rgb(122, 118, 131); 
+    opacity: 0.8;
+    margin-top: auto;
+}
+#Referencias :hover{   /* llamo al id padre que almacena todo y luego li para señalar que clases quiero cambiar, y termino especificando el hover para que se les aplique a todos los links */
+    color: rgb(170, 170, 170);
+
+}
+/*======================FIN FOOTER==========================*/
+/*==========================================================*/
+
+
+
+
+/*======================Administración===========================*/
+/*===========================================================*/
+#LetrasPaneles{
+    font-size: 25px;
+    text-shadow: 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff;  /* Fondo paras las letras trucho */
+    font-size: 25px;
+}
+.error{
     color: red;
- /* fin footer  */
 }
-#TituloContacto{
-    color: rgb(208, 211, 30);
+/*=====================FIN ADMINISTRACIÓN====================*/
+/*===========================================================*/
+
+
+
+
+
+/*======================FUNDACIÓN===========================*/
+/*==========================================================*/
+#TextoCard h3{
+    text-align: center;
+    color: #25802a;
+
 }
-#ReferenciaContacto{
-    color: aqua;
+#TextoCard p{
+    text-align: center;
+    color: #25802a;
+    font-size: 20px;
 }
-#ReferenciaContacto:hover{
-    color: red;
+#BotonDonaciones{
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
-/* -------------------style fundación -----------------------  */
+.card-body {
+    opacity: 0.9;
+}
+#tituloModal{
+    background-color: aqua;
+    color: black;
+}
 #gatetedonaciones{
     width: 300px;
     height: auto;
 }
-
 #DonacionVegetación{
     width: 300px;
     height: auto;
@@ -89,96 +303,71 @@
     width: 300px;
     height: auto;
 }
-/* ----------------- fin fundación -------------------  */
-#BoxContacto{
-    color: rgb(190, 8, 130);
+#stFundacion{
+    color: black;
 }
-#TituloHome{
-    padding: 100px;
-    color: aliceblue;
+#bodyModal{
+    background-color: green;
+    color: black;
+    text-align: center;
 }
-#DragonIcono{
-    width: 50px;
-    height: auto;
+#btnCerrar{
+    background-color: brown;
+    color: black;
 }
-#DragonesTitle{
-    width: 75px;
-    height: auto;
-    padding: 5px;
+#btnCerrar02{
+    background-color: blueviolet;
+    color: black;
 }
-#bodyIndex{
-    font-size: 20px;
-}
-#TitleJardin{    /*  ajusto el tamaño de la fuente  */
-    font-size: 100px;
-}
-#slide01 img{
-    width: 700px;
-    height: auto;
-}
-#IconoGuapetonIcono{
-width: 75px;
-height: auto;
-padding: 5px;
+/*======================FIN FUNDACIÓN==========================*/
+/*=============================================================*/
+
+
+
+
+/*======================CARRITO======================*/
+/*===================================================*/
+
+#TituloCompra{
+    color: rgb(93, 9, 141);
+    text-shadow: 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff;
+} 
+#listaCompra th{
+    color: rgb(93, 9, 141);
+    text-shadow: 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff, 1px 0px 10px #ffffff;
 }
 #IconTitleCatalogo{
     width: 75px;
     height: auto;
     padding: 5px;
+    font-size: 1000px;
 }
-
 #imgProduct{
     width: 120px;
     height: auto;
     padding: 2px;
     display: flex;
 }
-
 .table-responsive{
     display: block;
     width: 100%;
     overflow-x: auto;
+    background-color: #ffffff;
 }
-
+#procesarPago{
+    background-color: white;
+}
+#txtTotal{
+    font-size: 18px;
+}
+#totalCompra{
+    font-size: 20px;
+}
 #inicioSesion{
     width: 30px;
     width: 30px;
     margin-left: 400px;
 }
-
-#envio{
-    background-color: #d1e7dd;
-    color: black;
-}
-
-#pagar{
-    text-align: center;
-}
-
-/* Inicio sesion  */
-#bg{
-    background-image: url(Fondos/f1.png);
-    background-position: center center;
-}
-
-/* #bbg{
-    background: #ff57ca;
-    background:linear-gradient(to right, #9838cf, #ff57ca);
-} */
-
-#bbg{
-    background-image: url(Fondos/FondoAnto.jpg);
-    background-position: center center;
-}
-
-#btns{
-    border-color: black;
-}
-
-#stFundacion{
-    color: black;
-}
-
 .modal-contenedor{
     display: flex;
     align-items: center;
@@ -195,3 +384,104 @@ padding: 5px;
     font-style: italic;
     color: rgb(199, 64, 138);
 }
+
+.alerta{
+    font-weight: 900;
+    font-size: 24px;
+}
+
+
+.boton{
+    opacity: 0;
+}
+
+/*=====================FIN CARRITO===================*/
+/*===================================================*/
+
+
+
+/*==================INICIO DE SESION=================*/
+/*===================================================*/
+#miBoton{
+    background-color: blue;
+ 
+}
+#bg{
+    background-image: url(Fondos/f1.png);
+    background-position: center center;
+}
+/* #bbg{
+    background: #ff57ca;
+    background:linear-gradient(to right, #9838cf, #ff57ca);
+} */
+#bbg{
+    background-image: url(Fondos/FondoAnto.jpg);
+    background-position: center center;
+}
+#btns{
+    border-color: black;
+}
+/*===============FIN INICIO DE SESION================*/
+/*===================================================*/
+
+
+
+
+/*=================================================*/
+/*==================== Reloj ======================*/
+
+.wrap{
+    width: 50%;
+    max-width: 1000px;
+   /* margin: auto;  para darle margin a toda la clase*/
+}
+.widget{
+    width: 40%;
+    /*margin: 2em;   para darle margin*/
+    /* margin: 32px; */
+}
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+body.dark .reloj{   /*claro */
+    background: rgba(153, 135, 135, 0.5);
+}
+.fecha{
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    /* margin-bottom: px;*/
+    background: rgba(145, 189, 44, 0.644);
+    padding: 20px;
+    width: 100%;
+}
+body.dark .fecha{
+background: rgba(153, 135, 135, 0.5);
+
+}
+.reloj{ /* oscuro */
+    font-family: Oswald, Arial;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background: rgba(145, 189, 44, 0.644);
+}
+.reloj  .caja-segundos{
+    display: inline-block;
+}
+.reloj  .segundos,
+.reloj  .ampm{
+    font-size: 2rem;
+    display: block;
+}
+.BotonesReloj{
+    width: 100%;
+    height: auto;
+    padding-right: 80%;
+
+}
+/*===================FIN DEL RELOJ=================*/
+/*=================================================*/

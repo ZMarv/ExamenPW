@@ -35,7 +35,9 @@ function pass(){
         document.getElementById("ocultar").style.display = "none";
         document.getElementById("mostrar").style.display = "inline";
     }
-
     
 }
+function redirigir() {
+    window.open('index.html', '_blank');
 
+}
