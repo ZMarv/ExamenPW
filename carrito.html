@@ -14,28 +14,30 @@
 
 <body class="dark" id="bodyIndex" style="font-family:  'Times New Roman', Times, serif;">
     <nav  id="navBar" class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContenido">
-            <ul id="NavCompleto" class="navbar-nav me-auto mb-2 mb-lg-0 " >
-              <li class="nav-item">
-                <a id="NavDatos" class="nav-link " href="index.html ">Jardín Del Dragón</a>
-              </li>
-              <li class="nav-item">
-                <a id="NavDatos" class="nav-link" href="catalogo.html " >Catálogo</a>
-              </li>
-              <li class="nav-item">
-                <a id="NavDatos" class="nav-link" href="guapeton.html" >Jardinero Del Año</a>
-              </li>
-              <li class="nav-item">
-                <a id="NavDatos" class="nav-link" href="fundación.html" >Fundación </a>
-              </li>
-              <li class="nav-item">
-                <a id="NavDatos" class="nav-link" href="Nosotros.html" >Nosotros </a>
-              </li>
+      <div class="container-fluid">
+        <img class="navbar-brand" src="img/DragonIcono01.jpg.png" id="DragonIcono"></img>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContenido">
+          <ul id="NavCompleto" class="navbar-nav me-auto mb-2 mb-lg-0 " >
+            <li class="nav-item">
+              <a id="NavDatos" class="nav-link " href="index.html ">Jardín Del Dragón</a>
+            </li>
+            <li class="nav-item">
+              <a id="NavDatos" class="nav-link" href="catalogo.html " >Catálogo</a>
+            </li>
+             <li class="nav-item dropdown">
+              <a  id="NavDatos" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul   class="dropdown-menu">
+                <li><a class="dropdown-item" href="Nosotros.html">Nosotros</a></li>
+                <li><hr></li>
+                <li><a class="dropdown-item" href="fundación.html">Fundación</a></li>
+                <li><hr></li>
+                <li><a class="dropdown-item" href="guapeton.html">Jardinero Del Año</a></li>
+              </ul>
               <li class="nav-item">
                 <a id="NavDatos" class="nav-link" href="clima.html" > Clima </a>
               </li>
@@ -127,7 +129,7 @@
                         <div id="botones" class="row justify-content-between mb-5">
                             <div class="col-md-4 mb-4">
                                 <button href="catalogo.html" id="botonComprando" class="btn btn-info btn-block">Seguir comprando</button>
-                                 <input type="submit" class="btn btn-success btn-block" id="BotonFinalizando" value="Finalizar compra">
+                                <button id="BotonFinalizando" class="btn btn-success btn-block">Finalizar Compra</button>
                             </div>
                         </div>
                     </form>
